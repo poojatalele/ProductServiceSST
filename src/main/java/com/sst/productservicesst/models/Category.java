@@ -1,11 +1,11 @@
 package com.sst.productservicesst.models;
 
-import jakarta.persistence.Entity;
-import jakarta.persistence.GeneratedValue;
-import jakarta.persistence.GenerationType;
-import jakarta.persistence.Id;
+import com.mysql.cj.protocol.x.XProtocolDecoder;
+import jakarta.persistence.*;
 import lombok.Getter;
 import lombok.Setter;
+
+import java.util.List;
 
 @Getter
 @Setter
@@ -15,4 +15,6 @@ public class Category {
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
     private String title;
+//    @OneToMany(fetch = FetchType.EAGER)
+//    private List<Product> products;
 }
