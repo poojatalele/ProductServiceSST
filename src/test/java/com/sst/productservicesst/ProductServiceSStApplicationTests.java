@@ -17,16 +17,16 @@ class ProductServiceSStApplicationTests {
     @Test
     void contextLoads() {
     }
-    @Test
-    void testEagerVsLazyFetch() {
-        Optional<Category> optionalCategory =
-                categoryRepository.findById(1L);
-
-        Category category = optionalCategory.get();
-
-        System.out.println("Fetching list of products for the above category");
-        List<Product> products = category.getProducts();
-
-        System.out.println("DEBUG");
-    }
+//    @Test
+//    void testEagerVsLazyFetch() {
+//        Optional<Category> optionalCategory =
+//                categoryRepository.findById(1L);
+//
+//        Category category = optionalCategory.get();
+//
+//        System.out.println("Fetching list of products for the above category");
+//        List<Product> products = category.getProducts();
+//
+//        System.out.println("DEBUG");
+//    }
 }

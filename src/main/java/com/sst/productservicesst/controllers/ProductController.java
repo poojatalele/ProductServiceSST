@@ -26,7 +26,6 @@ public class ProductController {
     @GetMapping("/{id}")
     public Product getProductById(@PathVariable("id") Long id){
 //        throw new RuntimeException("Something went wrong");
-        return productService.getProductById(id);
 
 //        ResponseEntity<Product> responseEntity = null;
 //        Product product = null;
@@ -44,6 +43,12 @@ public class ProductController {
 ////            System.out.println("Something went wrong");
 //            return response;
 //        }
+        //product.setImage("sample image");
+
+//        Product product1 = new Product();
+//        product1.setTitle("Macbook");
+//        return product1;
+        return productService.getProductById(id);
     }
 
     @GetMapping
